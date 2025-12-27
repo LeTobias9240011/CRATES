@@ -1,0 +1,23 @@
+name: Crates
+version: 1.0.0
+main: de.bytecodes.crates.CratesPlugin
+description: Ein umfassendes Crates-System mit GUI und Datenbankunterstützung
+author: ByteCodes
+api-version: 1.13
+
+commands:
+  crates:
+    description: Öffnet das Crates-Menü
+    usage: /crates [subcommand]
+    aliases: [crate, kiste, kisten]
+
+permissions:
+  crates.admin:
+    description: Ermöglicht Zugriff auf Crates-Admin-Befehle
+    default: op
+  crates.use:
+    description: Ermöglicht Spielern, Crates zu verwenden
+    default: true
+  crates.bypass:
+    description: Umgeht den Wartungsmodus
+    default: op
